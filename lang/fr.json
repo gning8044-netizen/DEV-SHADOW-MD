@@ -1,0 +1,463 @@
+{
+    "meta": {
+      "name": "Français",
+      "flag": "🇫🇷"
+    },
+    "commands": {
+      "ping": {
+        "description": "Vérifier le statut du bot",
+        "response": "Pong! Le bot est en ligne"
+      },
+      "help": {
+        "title": "Menu des commandes",
+        "basic": "Commandes de base",
+        "owner": "Commandes propriétaire",
+        "protection": "Commandes de protection",
+        "info": "Informations du bot"
+      }, 
+    "tourl": {
+      "description": "> Convertir une image ou un audio en lien direct",
+      "noMedia": "> Veuillez répondre à une image ou un audio pour le convertir.",
+      "uploading": "> Téléversement vers le serveur en cours...",
+      "success": "> *MÉDIA EN LIGNE*\n\n> *URL :* {url}\n> *Type :* {type}",
+      "error": "> ❌ Échec du téléversement. Veuillez réessayer."
+    }
+
+    },
+    "mode": {
+      "public": {
+        "success": "*MODE DU BOT CHANGE*\n\n> Mode: PUBLIC",
+        "already": "> Le bot est déjà en mode public"
+      },
+      "private": {
+        "success": "*MODE DU BOT CHANGE*\n\n> Mode: PRIVE",
+        "already": "> Le bot est déjà en mode privé",
+        "blocked": "BOT EN MODE PRIVE\n\nSeuls le propriétaire et les utilisateurs sudo peuvent utiliser les commandes.\n\nContactez le propriétaire du bot pour l'accès."
+      }
+    },
+    "sudo": {
+      "added": "UTILISATEUR SUDO AJOUTE\n\nUtilisateur: @{user}\nAccès sudo accordé",
+      "removed": "UTILISATEUR SUDO RETIRE\n\nUtilisateur: @{user}\nAccès sudo révoqué",
+      "already": "L'utilisateur est déjà sudo",
+      "notFound": "L'utilisateur n'est pas sudo",
+      "list": "LISTE DES UTILISATEURS SUDO\n\nTotal: {count} utilisateur(s)"
+    },
+    "protection": {
+      "antilink": {
+        "enabled": "ANTILINK ACTIVE\n\nLa protection est maintenant active",
+        "disabled": "ANTILINK DESACTIVE\n\nLa protection est maintenant inactive",
+        "warning": "AVERTISSEMENT ANTILINK {count}/{max}\n\nLes liens ne sont pas autorisés\n{remaining} avertissements restants avant l'exclusion",
+        "kick": "AVERTISSEMENT ANTILINK {count}/{max}\n\nLes liens ne sont pas autorisés\nL'utilisateur sera exclu"
+      },
+      "antitag": {
+        "enabled": "ANTITAG ACTIVE\n\nLa protection est maintenant active",
+        "disabled": "ANTITAG DESACTIVE\n\nLa protection est maintenant inactive",
+        "warning": "AVERTISSEMENT ANTITAG {count}/{max}\n\nLes mentions de masse ne sont pas autorisées\n{remaining} avertissements restants avant l'exclusion",
+        "kick": "AVERTISSEMENT ANTITAG {count}/{max}\n\nLes mentions de masse ne sont pas autorisées\nL'utilisateur sera exclu"
+      },
+      "antimedia": {
+        "enabled": "ANTIMEDIA ACTIVE\n\nLa protection est maintenant active",
+        "disabled": "ANTIMEDIA DESACTIVE\n\nLa protection est maintenant inactive",
+        "warning": "AVERTISSEMENT ANTIMEDIA {count}/{max}\n\nLes médias ne sont pas autorisés\n{remaining} avertissements restants avant l'exclusion",
+        "kick": "AVERTISSEMENT ANTIMEDIA {count}/{max}\n\nLes médias ne sont pas autorisés\nL'utilisateur sera exclu"
+      },
+      "antispam": {
+        "enabled": "ANTISPAM ACTIVE\n\nLa protection est maintenant active",
+        "disabled": "ANTISPAM DESACTIVE\n\nLa protection est maintenant inactive",
+        "warning": "AVERTISSEMENT ANTISPAM {count}/{max}\n\nLe spam n'est pas autorisé\n{remaining} avertissements restants avant l'exclusion",
+        "kick": "AVERTISSEMENT ANTISPAM {count}/{max}\n\nLe spam n'est pas autorisé\nL'utilisateur sera exclu"
+      },
+      "groupOnly": "Cette commande ne peut être utilisée que dans les groupes",
+      "adminOnly": "Seuls les administrateurs du groupe peuvent utiliser cette commande",
+      "botNotAdmin": "Le bot doit être administrateur pour utiliser cette fonctionnalité"
+    },
+    "errors": {
+      "ownerOnly": "Seul le propriétaire du bot peut utiliser cette commande",
+      "commandFailed": "Une erreur s'est produite lors de l'exécution de la commande",
+      "commandNotFound": "Commande \"{command}\" introuvable. Utilisez .help pour voir les commandes disponibles",
+      "invalidUsage": "Utilisation invalide. Utilisez: {usage}"
+    }, 
+    "welcome": {
+      "enabled": "✅ *MESSAGE DE BIENVENUE ACTIVÉ*\n\nLe bot accueillera les nouveaux membres.",
+      "disabled": "❌ *MESSAGE DE BIENVENUE DÉSACTIVÉ*",
+      "setSuccess": "✅ *MESSAGE DE BIENVENUE DÉFINI*\n\nNouveau message enregistré avec succès.",
+      "default": "Bienvenue @user dans {group} !\nNous sommes maintenant {members} membres.\n\n{desc}"
+    },
+    "goodbye": {
+      "enabled": "✅ *MESSAGE D'ADIEU ACTIVÉ*\n\nLe bot dira au revoir aux membres qui partent.",
+      "disabled": "❌ *MESSAGE D'ADIEU DÉSACTIVÉ*",
+      "setSuccess": "✅ *MESSAGE D'ADIEU DÉFINI*\n\nNouveau message enregistré avec succès.",
+      "default": "Au revoir @user ! Tu vas nous manquer."
+    }, 
+         "antipromote": {
+        "enabled": "ANTIPROMOTE ACTIVE\n\nLa promotion d'admin est interdite.",
+        "disabled": "ANTIPROMOTE DESACTIVE",
+        "alert": "🛡️ *ANTI-PROMOTE*\n\n@user ne peut pas être admin.\n> Promotion annulée."
+      },
+      "antidemote": {
+        "enabled": "ANTIDEMOTE ACTIVE\n\nLa rétrogradation d'admin est interdite.",
+        "disabled": "ANTIDEMOTE DESACTIVE",
+        "alert": "🛡️ *ANTI-DEMOTE*\n\n@user ne peut pas être rétrogradé.\n> Rétrogradation annulée."
+      }, 
+  
+  "quiz": {
+    "ui": {
+      "title": "🧠 SEN QUIZZ",
+      "select": "Choisissez une catégorie pour commencer !",
+      "lobby": "*SEN_QUIZZ LOBBY*\n\n> *Catégorie :* {category}\n\nÉcrivez *'join'* pour rejoindre la partie !\nLa partie commence dans 30 secondes.",
+      "joined": "✅ @{user} a rejoint la partie !",
+      "starting": "🚀 *LE QUIZZ COMMENCE !*\nPréparez-vous...",
+      "question_header": "*QUESTION {num}/{total}*\n> *Catégorie :* {category}\n\n{question}",
+      "correct": "✅ Bonne réponse @{user} !",
+      "wrong": "❌ Mauvaise réponse @{user}...",
+      "finished": "🏁 *FIN DU QUIZZ*\n\n🏆 *Gagnant :* @{winner} ({score} pts)\n\nMerci d'avoir joué !",
+      "no_winner": "🏁 *FIN DU QUIZZ*\nPersonne n'a marqué de points."
+    },
+    "categories": {
+      "general": {
+        "name": "Culture Générale",
+        "desc": "Testez vos connaissances générales",
+        "img": "https://i.ibb.co/tMrbqZJp/6591054ce971224803a03bda9bf3afba.jpg",
+        "questions": [
+          {
+            "q": "Quelle est la capitale de la France ?",
+            "options": ["Lyon", "Marseille", "Paris", "Bordeaux"],
+            "answer": 2
+          },
+          {
+            "q": "Qui a peint la Joconde ?",
+            "options": ["Picasso", "Da Vinci", "Van Gogh", "Monet"],
+            "answer": 1
+          },
+          {
+            "q": "Combien y a-t-il de continents sur Terre ?",
+            "options": ["5", "6", "7", "8"],
+            "answer": 2
+          },
+          {
+            "q": "Quel est le plus grand océan du monde ?",
+            "options": ["Atlantique", "Indien", "Arctique", "Pacifique"],
+            "answer": 3
+          },
+          {
+            "q": "En quelle année a eu lieu la Révolution française ?",
+            "options": ["1789", "1799", "1815", "1848"],
+            "answer": 0
+          },
+          {
+            "q": "Quelle est la monnaie du Japon ?",
+            "options": ["Yuan", "Won", "Yen", "Baht"],
+            "answer": 2
+          },
+          {
+            "q": "Qui a écrit 'Les Misérables' ?",
+            "options": ["Balzac", "Hugo", "Zola", "Flaubert"],
+            "answer": 1
+          },
+          {
+            "q": "Quel pays a la plus grande population mondiale ?",
+            "options": ["Inde", "Chine", "USA", "Indonésie"],
+            "answer": 1
+          },
+          {
+            "q": "Combien de joueurs y a-t-il dans une équipe de football ?",
+            "options": ["9", "10", "11", "12"],
+            "answer": 2
+          },
+          {
+            "q": "Quelle est la planète la plus proche du Soleil ?",
+            "options": ["Vénus", "Mercure", "Mars", "Terre"],
+            "answer": 1
+          }
+        ]
+      },
+      "anime": {
+        "name": "Manga & Anime",
+        "desc": "Pour les vrais Otakus",
+        "img": "https://i.ibb.co/hxN8MHvJ/2badb1295ed7642d072e6e73fd11c7be.jpg",
+        "questions": [
+          {
+            "q": "Qui est le héros de One Piece ?",
+            "options": ["Zoro", "Luffy", "Naruto", "Goku"],
+            "answer": 1
+          },
+          {
+            "q": "Quel est le nom du village de Naruto ?",
+            "options": ["Suna", "Konoha", "Kiri", "Kumo"],
+            "answer": 1
+          },
+          {
+            "q": "Qui est l'auteur de Death Note ?",
+            "options": ["Oda", "Kishimoto", "Ohba", "Toriyama"],
+            "answer": 2
+          },
+          {
+            "q": "Quel est le nom du Titan Colossal dans Attack on Titan ?",
+            "options": ["Eren", "Armin", "Bertolt", "Reiner"],
+            "answer": 2
+          },
+          {
+            "q": "Dans Dragon Ball, combien de Dragon Balls existe-t-il ?",
+            "options": ["5", "6", "7", "8"],
+            "answer": 2
+          },
+          {
+            "q": "Quel anime met en scène des alchimistes ?",
+            "options": ["Naruto", "FMA", "Bleach", "HxH"],
+            "answer": 1
+          },
+          {
+            "q": "Qui est le mentor de Rock Lee dans Naruto ?",
+            "options": ["Kakashi", "Jiraiya", "Guy", "Asuma"],
+            "answer": 2
+          },
+          {
+            "q": "Dans My Hero Academia, quel est le quirk de Deku ?",
+            "options": ["One For All", "All Might", "Explosion", "Half-Cold"],
+            "answer": 0
+          },
+          {
+            "q": "Quel est le fruit du démon de Luffy ?",
+            "options": ["Gomu Gomu", "Mera Mera", "Hie Hie", "Gura Gura"],
+            "answer": 0
+          },
+          {
+            "q": "Qui est l'antagoniste principal de Demon Slayer ?",
+            "options": ["Akaza", "Doma", "Muzan", "Kokushibo"],
+            "answer": 2
+          }
+        ]
+      },
+      "science": {
+        "name": "Sciences",
+        "desc": "Physique, chimie, biologie...",
+        "img": "https://i.ibb.co/zHBj1dPX/15ac2ae45cf855999d1363ff0b982ce3.jpg",
+        "questions": [
+          {
+            "q": "Quelle est la formule chimique de l'eau ?",
+            "options": ["H2O", "O2", "CO2", "H2O2"],
+            "answer": 0
+          },
+          {
+            "q": "Quelle est la vitesse de la lumière ?",
+            "options": ["300 000 km/s", "150 000 km/s", "450 000 km/s", "600 000 km/s"],
+            "answer": 0
+          },
+          {
+            "q": "Combien d'os a le corps humain adulte ?",
+            "options": ["198", "206", "214", "220"],
+            "answer": 1
+          },
+          {
+            "q": "Quel gaz est essentiel à la respiration ?",
+            "options": ["Azote", "Oxygène", "CO2", "Hydrogène"],
+            "answer": 1
+          },
+          {
+            "q": "Qui a découvert la pénicilline ?",
+            "options": ["Pasteur", "Fleming", "Curie", "Darwin"],
+            "answer": 1
+          },
+          {
+            "q": "Quelle planète est surnommée la planète rouge ?",
+            "options": ["Vénus", "Jupiter", "Mars", "Saturne"],
+            "answer": 2
+          },
+          {
+            "q": "Quel est l'élément chimique de symbole Fe ?",
+            "options": ["Fluor", "Fer", "Francium", "Fermium"],
+            "answer": 1
+          },
+          {
+            "q": "Combien de chromosomes a l'être humain ?",
+            "options": ["23", "44", "46", "48"],
+            "answer": 2
+          },
+          {
+            "q": "Quelle est l'unité de mesure de la force ?",
+            "options": ["Joule", "Watt", "Newton", "Pascal"],
+            "answer": 2
+          },
+          {
+            "q": "Quel scientifique a développé la théorie de la relativité ?",
+            "options": ["Newton", "Einstein", "Hawking", "Bohr"],
+            "answer": 1
+          }
+        ]
+      },
+      "histoire": {
+        "name": "Histoire",
+        "desc": "Voyage dans le temps",
+        "img": "https://i.ibb.co/Jw2br6NR/b7d8bf7ec324a3a802b5ba4b4e53c213.jpg",
+        "questions": [
+          {
+            "q": "En quelle année a débuté la Première Guerre mondiale ?",
+            "options": ["1912", "1914", "1916", "1918"],
+            "answer": 1
+          },
+          {
+            "q": "Qui était le premier empereur romain ?",
+            "options": ["César", "Auguste", "Néron", "Caligula"],
+            "answer": 1
+          },
+          {
+            "q": "Quelle civilisation a construit les pyramides de Gizeh ?",
+            "options": ["Romains", "Grecs", "Égyptiens", "Mayas"],
+            "answer": 2
+          },
+          {
+            "q": "En quelle année Christophe Colomb a-t-il découvert l'Amérique ?",
+            "options": ["1492", "1500", "1520", "1550"],
+            "answer": 0
+          },
+          {
+            "q": "Qui a été le dernier roi de France ?",
+            "options": ["Louis XIV", "Louis XV", "Louis XVI", "Louis XVIII"],
+            "answer": 2
+          },
+          {
+            "q": "Quelle guerre a opposé le Nord et le Sud des États-Unis ?",
+            "options": ["Indépendance", "Sécession", "Vietnam", "Irak"],
+            "answer": 1
+          },
+          {
+            "q": "Qui a peint la chapelle Sixtine ?",
+            "options": ["Da Vinci", "Raphaël", "Michel-Ange", "Donatello"],
+            "answer": 2
+          },
+          {
+            "q": "En quelle année le mur de Berlin est-il tombé ?",
+            "options": ["1987", "1989", "1991", "1993"],
+            "answer": 1
+          },
+          {
+            "q": "Quel empereur français a été exilé à Sainte-Hélène ?",
+            "options": ["Louis XIV", "Napoléon", "Charlemagne", "Louis XVI"],
+            "answer": 1
+          },
+          {
+            "q": "Quelle bataille a marqué la défaite de Napoléon en 1815 ?",
+            "options": ["Austerlitz", "Waterloo", "Iéna", "Wagram"],
+            "answer": 1
+          }
+        ]
+      },
+      "geographie": {
+        "name": "Géographie",
+        "desc": "Explorez le monde",
+        "img": "https://i.ibb.co/B5HC9xdt/943e7d0cc0398147e996603890e920ad.jpg",
+        "questions": [
+          {
+            "q": "Quelle est la capitale de l'Australie ?",
+            "options": ["Sydney", "Melbourne", "Canberra", "Brisbane"],
+            "answer": 2
+          },
+          {
+            "q": "Quel est le plus long fleuve du monde ?",
+            "options": ["Amazone", "Nil", "Yangtsé", "Mississippi"],
+            "answer": 1
+          },
+          {
+            "q": "Dans quel pays se trouve le Taj Mahal ?",
+            "options": ["Pakistan", "Inde", "Bangladesh", "Népal"],
+            "answer": 1
+          },
+          {
+            "q": "Quelle est la plus grande île du monde ?",
+            "options": ["Madagascar", "Bornéo", "Groenland", "Nouvelle-Guinée"],
+            "answer": 2
+          },
+          {
+            "q": "Combien d'États compte les États-Unis ?",
+            "options": ["48", "50", "52", "54"],
+            "answer": 1
+          },
+          {
+            "q": "Quelle chaîne de montagnes sépare l'Europe de l'Asie ?",
+            "options": ["Alpes", "Himalaya", "Oural", "Andes"],
+            "answer": 2
+          },
+          {
+            "q": "Quelle est la capitale du Canada ?",
+            "options": ["Toronto", "Ottawa", "Montréal", "Vancouver"],
+            "answer": 1
+          },
+          {
+            "q": "Dans quel pays se trouve la ville de Tombouctou ?",
+            "options": ["Niger", "Mali", "Tchad", "Burkina Faso"],
+            "answer": 1
+          },
+          {
+            "q": "Quel désert est le plus grand du monde ?",
+            "options": ["Sahara", "Gobi", "Kalahari", "Antarctique"],
+            "answer": 3
+          },
+          {
+            "q": "Quelle mer sépare l'Afrique de l'Europe ?",
+            "options": ["Mer Rouge", "Méditerranée", "Mer Noire", "Mer Adriatique"],
+            "answer": 1
+          }
+        ]
+      },
+      "sport": {
+        "name": "Sport",
+        "desc": "Champions et records",
+        "img": "https://i.ibb.co/RpVPzjnZ/404ccf2b5e9568aa1c31267b9d68e373.jpg",
+        "questions": [
+          {
+            "q": "Combien de joueurs composent une équipe de basketball ?",
+            "options": ["4", "5", "6", "7"],
+            "answer": 1
+          },
+          {
+            "q": "Quel pays a remporté le plus de Coupes du Monde de football ?",
+            "options": ["Argentine", "Allemagne", "Brésil", "Italie"],
+            "answer": 2
+          },
+          {
+            "q": "Tous les combien d'années ont lieu les Jeux Olympiques ?",
+            "options": ["2 ans", "3 ans", "4 ans", "5 ans"],
+            "answer": 2
+          },
+          {
+            "q": "Quel sport pratique Usain Bolt ?",
+            "options": ["Natation", "Athlétisme", "Cyclisme", "Boxe"],
+            "answer": 1
+          },
+          {
+            "q": "Combien de sets faut-il gagner pour remporter un match de tennis masculin en Grand Chelem ?",
+            "options": ["2", "3", "4", "5"],
+            "answer": 1
+          },
+          {
+            "q": "Quel footballeur a remporté le plus de Ballons d'Or ?",
+            "options": ["Ronaldo", "Messi", "Pelé", "Maradona"],
+            "answer": 1
+          },
+          {
+            "q": "Dans quel sport utilise-t-on un putter ?",
+            "options": ["Tennis", "Golf", "Cricket", "Hockey"],
+            "answer": 1
+          },
+          {
+            "q": "Quelle est la durée d'un match de rugby à XV ?",
+            "options": ["60 min", "70 min", "80 min", "90 min"],
+            "answer": 2
+          },
+          {
+            "q": "Quel pays a accueilli les JO de 2016 ?",
+            "options": ["Chine", "Brésil", "Angleterre", "Japon"],
+            "answer": 1
+          },
+          {
+            "q": "Combien de Grand Chelem existe-t-il en tennis ?",
+            "options": ["3", "4", "5", "6"],
+            "answer": 1
+          }
+        ]
+      }
+    }
+  }
+}
+
+  
