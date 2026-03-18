@@ -1,0 +1,463 @@
+{
+"meta": {
+      "name": "English",
+      "flag": "🇬🇧"
+    },
+    "commands": {
+      "ping": {
+        "description": "Check bot status",
+        "response": "Pong! Bot is online"
+      },
+      "help": {
+        "title": "Command Menu",
+        "basic": "Basic Commands",
+        "owner": "Owner Commands",
+        "protection": "Protection Commands",
+        "info": "Bot Information"
+      }, 
+    "tourl": {
+      "description": "> Convert image or audio to direct URL",
+      "noMedia": "> Please reply to an image or audio file to convert it.",
+      "uploading": "> Uploading to server...",
+      "success": "> *MEDIA UPLOADED*\n\n> *URL :* {url}\n> *Type :* {type}",
+      "error": "> ❌ Upload failed. Please try again."
+    }
+
+    },
+    "mode": {
+      "public": {
+        "success": "*BOT MODE CHANGED*\n\n> Mode: PUBLIC",
+        "already": "Bot is already in public mode"
+      },
+      "private": {
+        "success": "*BOT MODE CHANGED*\n\n> Mode: PRIVATE\nOnly owner and sudo users can use the bot",
+        "already": "> Bot is already in private mode",
+        "blocked": "BOT IS IN PRIVATE MODE\n\nOnly the owner and sudo users can use commands.\n\nContact the bot owner for access."
+      }
+    },
+    "sudo": {
+      "added": "SUDO USER ADDED\n\nUser: @{user}\nSudo access granted",
+      "removed": "SUDO USER REMOVED\n\nUser: @{user}\nSudo access revoked",
+      "already": "User is already a sudo user",
+      "notFound": "User is not a sudo user",
+      "list": "SUDO USERS LIST\n\nTotal: {count} user(s)"
+    },
+    "protection": {
+      "antilink": {
+        "enabled": "ANTILINK ENABLED\n\nProtection is now active",
+        "disabled": "ANTILINK DISABLED\n\nProtection is now inactive",
+        "warning": "ANTILINK WARNING {count}/{max}\n\nLinks are not allowed\n{remaining} warnings left before removal",
+        "kick": "ANTILINK WARNING {count}/{max}\n\nLinks are not allowed\nUser will be removed"
+      },
+      "antitag": {
+        "enabled": "ANTITAG ENABLED\n\nProtection is now active",
+        "disabled": "ANTITAG DISABLED\n\nProtection is now inactive",
+        "warning": "ANTITAG WARNING {count}/{max}\n\nMass tagging is not allowed\n{remaining} warnings left before removal",
+        "kick": "ANTITAG WARNING {count}/{max}\n\nMass tagging is not allowed\nUser will be removed"
+      },
+      "antimedia": {
+        "enabled": "ANTIMEDIA ENABLED\n\nProtection is now active",
+        "disabled": "ANTIMEDIA DISABLED\n\nProtection is now inactive",
+        "warning": "ANTIMEDIA WARNING {count}/{max}\n\nMedia files are not allowed\n{remaining} warnings left before removal",
+        "kick": "ANTIMEDIA WARNING {count}/{max}\n\nMedia files are not allowed\nUser will be removed"
+      },
+      "antispam": {
+        "enabled": "ANTISPAM ENABLED\n\nProtection is now active",
+        "disabled": "ANTISPAM DISABLED\n\nProtection is now inactive",
+        "warning": "ANTISPAM WARNING {count}/{max}\n\nSpamming is not allowed\n{remaining} warnings left before removal",
+        "kick": "ANTISPAM WARNING {count}/{max}\n\nSpamming is not allowed\nUser will be removed"
+      },
+      "groupOnly": "This command can only be used in groups",
+      "adminOnly": "Only group admins can use this command",
+      "botNotAdmin": "Bot must be admin to use this feature"
+    },
+    "errors": {
+      "ownerOnly": "Only the bot owner can use this command",
+      "commandFailed": "An error occurred while executing the command",
+      "commandNotFound": "Command \"{command}\" not found. Use .help to see available commands",
+      "invalidUsage": "Invalid usage. Use: {usage}"
+    }, 
+    "welcome": {
+      "enabled": "✅ *WELCOME MESSAGE ENABLED*\n\nThe bot will welcome new members.",
+      "disabled": "❌ *WELCOME MESSAGE DISABLED*",
+      "setSuccess": "✅ *WELCOME MESSAGE SET*\n\nNew message saved successfully.",
+      "default": "Welcome @user to {group}!\nWe are now {members} members.\n\n{desc}"
+    },
+    "goodbye": {
+      "enabled": "✅ *GOODBYE MESSAGE ENABLED*\n\nThe bot will say goodbye to leaving members.",
+      "disabled": "❌ *GOODBYE MESSAGE DISABLED*",
+      "setSuccess": "✅ *GOODBYE MESSAGE SET*\n\nNew message saved successfully.",
+      "default": "Goodbye @user! We will miss you."
+    }, 
+         "antipromote": {
+        "enabled": "ANTIPROMOTE ENABLED\n\nAdmin promotion is forbidden.",
+        "disabled": "ANTIPROMOTE DISABLED",
+        "alert": "🛡️ *ANTI-PROMOTE*\n\n@user cannot be promoted.\n> Promotion cancelled."
+      },
+      "antidemote": {
+        "enabled": "ANTIDEMOTE ENABLED\n\nAdmin demotion is forbidden.",
+        "disabled": "ANTIDEMOTE DISABLED",
+        "alert": "🛡️ *ANTI-DEMOTE*\n\n@user cannot be demoted.\n> Demotion cancelled."
+      }, 
+     
+  "quiz": {
+    "ui": {
+      "title": "🧠 SEN QUIZ",
+      "select": "Choose a category to start!",
+      "lobby": "*SEN_QUIZ LOBBY*\n\n> *Category:* {category}\n\nType *'join'* to participate!\nGame starts in 30 seconds.",
+      "joined": "✅ @{user} joined the game!",
+      "starting": "🚀 *QUIZ STARTING!*\nGet ready...",
+      "question_header": "*QUESTION {num}/{total}*\n> *Category:* {category}\n\n{question}",
+      "correct": "✅ Correct answer @{user}!",
+      "wrong": "❌ Wrong answer @{user}...",
+      "finished": "🏁 *QUIZ FINISHED*\n\n🏆 *Winner:* @{winner} ({score} pts)\n\nThanks for playing!",
+      "no_winner": "🏁 *QUIZ FINISHED*\nNo one scored points."
+    },
+    "categories": {
+      "general": {
+        "name": "General Knowledge",
+        "desc": "Test your general knowledge",
+        "img": "https://i.ibb.co/tMrbqZJp/6591054ce971224803a03bda9bf3afba.jpg",
+        "questions": [
+          {
+            "q": "What is the capital of France?",
+            "options": ["Lyon", "Marseille", "Paris", "Bordeaux"],
+            "answer": 2
+          },
+          {
+            "q": "Who painted the Mona Lisa?",
+            "options": ["Picasso", "Da Vinci", "Van Gogh", "Monet"],
+            "answer": 1
+          },
+          {
+            "q": "How many continents are there on Earth?",
+            "options": ["5", "6", "7", "8"],
+            "answer": 2
+          },
+          {
+            "q": "What is the largest ocean in the world?",
+            "options": ["Atlantic", "Indian", "Arctic", "Pacific"],
+            "answer": 3
+          },
+          {
+            "q": "In which year did the French Revolution begin?",
+            "options": ["1789", "1799", "1815", "1848"],
+            "answer": 0
+          },
+          {
+            "q": "What is the currency of Japan?",
+            "options": ["Yuan", "Won", "Yen", "Baht"],
+            "answer": 2
+          },
+          {
+            "q": "Who wrote 'Les Misérables'?",
+            "options": ["Balzac", "Hugo", "Zola", "Flaubert"],
+            "answer": 1
+          },
+          {
+            "q": "Which country has the largest population?",
+            "options": ["India", "China", "USA", "Indonesia"],
+            "answer": 1
+          },
+          {
+            "q": "How many players are in a football team?",
+            "options": ["9", "10", "11", "12"],
+            "answer": 2
+          },
+          {
+            "q": "Which planet is closest to the Sun?",
+            "options": ["Venus", "Mercury", "Mars", "Earth"],
+            "answer": 1
+          }
+        ]
+      },
+      "anime": {
+        "name": "Manga & Anime",
+        "desc": "For true Otakus",
+        "img": "https://i.ibb.co/hxN8MHvJ/2badb1295ed7642d072e6e73fd11c7be.jpg",
+        "questions": [
+          {
+            "q": "Who is the hero of One Piece?",
+            "options": ["Zoro", "Luffy", "Naruto", "Goku"],
+            "answer": 1
+          },
+          {
+            "q": "What is Naruto's village called?",
+            "options": ["Suna", "Konoha", "Kiri", "Kumo"],
+            "answer": 1
+          },
+          {
+            "q": "Who is the author of Death Note?",
+            "options": ["Oda", "Kishimoto", "Ohba", "Toriyama"],
+            "answer": 2
+          },
+          {
+            "q": "Who is the Colossal Titan in Attack on Titan?",
+            "options": ["Eren", "Armin", "Bertolt", "Reiner"],
+            "answer": 2
+          },
+          {
+            "q": "In Dragon Ball, how many Dragon Balls exist?",
+            "options": ["5", "6", "7", "8"],
+            "answer": 2
+          },
+          {
+            "q": "Which anime features alchemists?",
+            "options": ["Naruto", "FMA", "Bleach", "HxH"],
+            "answer": 1
+          },
+          {
+            "q": "Who is Rock Lee's mentor in Naruto?",
+            "options": ["Kakashi", "Jiraiya", "Guy", "Asuma"],
+            "answer": 2
+          },
+          {
+            "q": "In My Hero Academia, what is Deku's quirk?",
+            "options": ["One For All", "All Might", "Explosion", "Half-Cold"],
+            "answer": 0
+          },
+          {
+            "q": "What is Luffy's devil fruit?",
+            "options": ["Gomu Gomu", "Mera Mera", "Hie Hie", "Gura Gura"],
+            "answer": 0
+          },
+          {
+            "q": "Who is the main antagonist of Demon Slayer?",
+            "options": ["Akaza", "Doma", "Muzan", "Kokushibo"],
+            "answer": 2
+          }
+        ]
+      },
+      "science": {
+        "name": "Science",
+        "desc": "Physics, chemistry, biology...",
+        "img": "https://i.ibb.co/zHBj1dPX/15ac2ae45cf855999d1363ff0b982ce3.jpg",
+        "questions": [
+          {
+            "q": "What is the chemical formula for water?",
+            "options": ["H2O", "O2", "CO2", "H2O2"],
+            "answer": 0
+          },
+          {
+            "q": "What is the speed of light?",
+            "options": ["300,000 km/s", "150,000 km/s", "450,000 km/s", "600,000 km/s"],
+            "answer": 0
+          },
+          {
+            "q": "How many bones does an adult human have?",
+            "options": ["198", "206", "214", "220"],
+            "answer": 1
+          },
+          {
+            "q": "Which gas is essential for breathing?",
+            "options": ["Nitrogen", "Oxygen", "CO2", "Hydrogen"],
+            "answer": 1
+          },
+          {
+            "q": "Who discovered penicillin?",
+            "options": ["Pasteur", "Fleming", "Curie", "Darwin"],
+            "answer": 1
+          },
+          {
+            "q": "Which planet is called the red planet?",
+            "options": ["Venus", "Jupiter", "Mars", "Saturn"],
+            "answer": 2
+          },
+          {
+            "q": "What is the chemical symbol for Iron?",
+            "options": ["F", "Fe", "Fr", "Fm"],
+            "answer": 1
+          },
+          {
+            "q": "How many chromosomes does a human have?",
+            "options": ["23", "44", "46", "48"],
+            "answer": 2
+          },
+          {
+            "q": "What is the unit of force?",
+            "options": ["Joule", "Watt", "Newton", "Pascal"],
+            "answer": 2
+          },
+          {
+            "q": "Which scientist developed the theory of relativity?",
+            "options": ["Newton", "Einstein", "Hawking", "Bohr"],
+            "answer": 1
+          }
+        ]
+      },
+      "history": {
+        "name": "History",
+        "desc": "Journey through time",
+        "img": "https://i.ibb.co/Jw2br6NR/b7d8bf7ec324a3a802b5ba4b4e53c213.jpg",
+        "questions": [
+          {
+            "q": "In which year did World War I begin?",
+            "options": ["1912", "1914", "1916", "1918"],
+            "answer": 1
+          },
+          {
+            "q": "Who was the first Roman emperor?",
+            "options": ["Caesar", "Augustus", "Nero", "Caligula"],
+            "answer": 1
+          },
+          {
+            "q": "Which civilization built the pyramids of Giza?",
+            "options": ["Romans", "Greeks", "Egyptians", "Mayans"],
+            "answer": 2
+          },
+          {
+            "q": "In which year did Columbus discover America?",
+            "options": ["1492", "1500", "1520", "1550"],
+            "answer": 0
+          },
+          {
+            "q": "Who was the last king of France?",
+            "options": ["Louis XIV", "Louis XV", "Louis XVI", "Louis XVIII"],
+            "answer": 2
+          },
+          {
+            "q": "Which war was fought between North and South USA?",
+            "options": ["Independence", "Civil War", "Vietnam", "Iraq"],
+            "answer": 1
+          },
+          {
+            "q": "Who painted the Sistine Chapel?",
+            "options": ["Da Vinci", "Raphael", "Michelangelo", "Donatello"],
+            "answer": 2
+          },
+          {
+            "q": "In which year did the Berlin Wall fall?",
+            "options": ["1987", "1989", "1991", "1993"],
+            "answer": 1
+          },
+          {
+            "q": "Which French emperor was exiled to Saint Helena?",
+            "options": ["Louis XIV", "Napoleon", "Charlemagne", "Louis XVI"],
+            "answer": 1
+          },
+          {
+            "q": "Which battle marked Napoleon's defeat in 1815?",
+            "options": ["Austerlitz", "Waterloo", "Jena", "Wagram"],
+            "answer": 1
+          }
+        ]
+      },
+      "geography": {
+        "name": "Geography",
+        "desc": "Explore the world",
+        "img": "https://i.ibb.co/B5HC9xdt/943e7d0cc0398147e996603890e920ad.jpg",
+        "questions": [
+          {
+            "q": "What is the capital of Australia?",
+            "options": ["Sydney", "Melbourne", "Canberra", "Brisbane"],
+            "answer": 2
+          },
+          {
+            "q": "What is the longest river in the world?",
+            "options": ["Amazon", "Nile", "Yangtze", "Mississippi"],
+            "answer": 1
+          },
+          {
+            "q": "In which country is the Taj Mahal?",
+            "options": ["Pakistan", "India", "Bangladesh", "Nepal"],
+            "answer": 1
+          },
+          {
+            "q": "What is the largest island in the world?",
+            "options": ["Madagascar", "Borneo", "Greenland", "New Guinea"],
+            "answer": 2
+          },
+          {
+            "q": "How many states does the USA have?",
+            "options": ["48", "50", "52", "54"],
+            "answer": 1
+          },
+          {
+            "q": "Which mountain range separates Europe from Asia?",
+            "options": ["Alps", "Himalayas", "Urals", "Andes"],
+            "answer": 2
+          },
+          {
+            "q": "What is the capital of Canada?",
+            "options": ["Toronto", "Ottawa", "Montreal", "Vancouver"],
+            "answer": 1
+          },
+          {
+            "q": "In which country is Timbuktu?",
+            "options": ["Niger", "Mali", "Chad", "Burkina Faso"],
+            "answer": 1
+          },
+          {
+            "q": "What is the largest desert in the world?",
+            "options": ["Sahara", "Gobi", "Kalahari", "Antarctica"],
+            "answer": 3
+          },
+          {
+            "q": "Which sea separates Africa from Europe?",
+            "options": ["Red Sea", "Mediterranean", "Black Sea", "Adriatic"],
+            "answer": 1
+          }
+        ]
+      },
+      "sport": {
+        "name": "Sports",
+        "desc": "Champions and records",
+        "img": "https://i.ibb.co/RpVPzjnZ/404ccf2b5e9568aa1c31267b9d68e373.jpg", 
+        "questions": [
+          {
+            "q": "How many players are in a basketball team?",
+            "options": ["4", "5", "6", "7"],
+            "answer": 1
+          },
+          {
+            "q": "Which country won the most FIFA World Cups?",
+            "options": ["Argentina", "Germany", "Brazil", "Italy"],
+            "answer": 2
+          },
+          {
+            "q": "How often are Olympic Games held?",
+            "options": ["2 years", "3 years", "4 years", "5 years"],
+            "answer": 2
+          },
+          {
+            "q": "What sport does Usain Bolt practice?",
+            "options": ["Swimming", "Athletics", "Cycling", "Boxing"],
+            "answer": 1
+          },
+          {
+            "q": "How many sets to win a Grand Slam men's match?",
+            "options": ["2", "3", "4", "5"],
+            "answer": 1
+          },
+          {
+            "q": "Which footballer won the most Ballon d'Or?",
+            "options": ["Ronaldo", "Messi", "Pele", "Maradona"],
+            "answer": 1
+          },
+          {
+            "q": "In which sport do you use a putter?",
+            "options": ["Tennis", "Golf", "Cricket", "Hockey"],
+            "answer": 1
+          },
+          {
+            "q": "How long is a rugby match?",
+            "options": ["60 min", "70 min", "80 min", "90 min"],
+            "answer": 2
+          },
+          {
+            "q": "Which country hosted the 2016 Olympics?",
+            "options": ["China", "Brazil", "England", "Japan"],
+            "answer": 1
+          },
+          {
+            "q": "How many Grand Slams exist in tennis?",
+            "options": ["3", "4", "5", "6"],
+            "answer": 1
+          }
+        ]
+      }
+    }
+  }
+}
+
+
